@@ -1,0 +1,29 @@
+.ExpenseItem {
+  background-color: rgb(20, 94, 75);
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  color: white;
+  margin: 10px 20%;
+  display: flex;
+  flex-direction: row;
+}
+.Expense-date,
+.Expense-amount,
+.Expense-name {
+  /*display: inline-block;*/
+  padding: 10px;
+}
+.Expense-date{
+  flex-grow: 1;
+}
+.Expense-name{
+  flex-grow: 5;
+}
+.Expense-amount{
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 30px;
+  margin: 30px 20px;
+  padding: 5px 10px;
+}
