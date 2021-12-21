@@ -3,7 +3,7 @@
   border-radius: 10px;
   border: 1px solid rgb(0, 0, 0);
   color: white;
-  margin: 10px 20%;
+  margin: 20px;
   display: flex;
   flex-direction: row;
 }
@@ -13,13 +13,13 @@
   /*display: inline-block;*/
   padding: 10px;
 }
-.Expense-date{
+.Expense-date {
   flex-grow: 1;
 }
-.Expense-name{
+.Expense-name {
   flex-grow: 5;
 }
-.Expense-amount{
+.Expense-amount {
   border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
   font-weight: bolder;

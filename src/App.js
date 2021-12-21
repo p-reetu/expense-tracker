@@ -1,5 +1,6 @@
 import "./styles.css";
 import Expenses from "./components/Expenses";
+import NewExpense from "./components/NewExpense";
 
 export default function App() {
   const list = [
@@ -25,6 +26,7 @@ export default function App() {
   ];
   return (
     <div className="App">
+      <NewExpense />
       <Expenses list={list} />
     </div>
   );

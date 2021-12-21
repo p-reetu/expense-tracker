@@ -1,0 +1,22 @@
+.ExpenseForm {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+}
+input {
+  background-color: blanchedalmond;
+}
+button {
+  margin: auto;
+  display: block;
+  background-color: rgb(20, 94, 75);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-family: serif;
+}
+.form-control {
+  display: inline-block;
+  flex-grow: 1;
+}

@@ -1,7 +1,6 @@
-.Expenses {
-  padding: 10px;
+.NewExpense {
   background-color: rgb(226, 226, 226);
-  margin: 5px 20%;
   border-radius: 10px;
   border: 1px solid black;
+  margin: 5px 20%;
 }
