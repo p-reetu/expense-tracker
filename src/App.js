@@ -24,9 +24,14 @@ export default function App() {
       date: new Date(2021, 5, 12)
     }
   ];
+
+  function addedExpense(newAddedExpense) {
+    console.log("in side app");
+    console.log(newAddedExpense);
+  }
   return (
     <div className="App">
-      <NewExpense />
+      <NewExpense onNewAddedExpense={addedExpense} />
       <Expenses list={list} />
     </div>
   );
