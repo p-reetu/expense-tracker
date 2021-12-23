@@ -5,36 +5,33 @@ import "./Expenses.css";
 
 export default function Expenses(props) {
   const list = props.list;
-  const [selectedYear, setSelectedYear] = useState("");
+  const [selectedYear, setSelectedYear] = useState("2021");
+  const filteredArray = list.filter(
+    (expense) => selectedYear === expense.date.getFullYear().toString()
+  );
 
   function selectedfilteryear(enteredYear) {
     setSelectedYear(enteredYear);
   }
   return (
     <div className="Expenses">
-      <ExpensesFilter onYearChange={selectedfilteryear} />
-      <div>
-        <ExpenseItem
-          date={list[0].date}
-          name={list[0].title}
-          amount={list[0].amount}
-        />
-        <ExpenseItem
-          date={list[1].date}
-          name={list[1].title}
-          amount={list[1].amount}
-        />
-        <ExpenseItem
-          date={list[2].date}
-          name={list[2].title}
-          amount={list[2].amount}
-        />
-        <ExpenseItem
-          date={list[3].date}
-          name={list[3].title}
-          amount={list[3].amount}
-        />
-      </div>
+      <ExpensesFilter
+        sltdyear={selectedYear}
+        onYearChange={selectedfilteryear}
+      />
+      {filteredArray.length === 0 ? (
+        <p>No Expenses found! Try selecting a different year.</p>
+      ) : (
+        filteredArray.map((expense) => {
+          return (
+            <ExpenseItem
+              date={expense.date}
+              name={expense.title}
+              amount={expense.amount}
+            />
+          );
+        })
+      )}
     </div>
   );
 }

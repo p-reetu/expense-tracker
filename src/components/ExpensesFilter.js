@@ -1,12 +1,8 @@
-import { useState } from "react";
 import "./ExpensesFilter.css";
 import React from "react";
 
 export default function ExpensesFilter(props) {
-  const [filterYear, setFilterYear] = useState("");
-
   function yearChangeHandler(event) {
-    setFilterYear(event.target.value);
     props.onYearChange(event.target.value);
   }
   return (
@@ -17,7 +13,7 @@ export default function ExpensesFilter(props) {
         </div>
         <div className="sub-comp-2">
           <div>
-            <select onChange={yearChangeHandler}>
+            <select value={props.sltdyear} onChange={yearChangeHandler}>
               <option value="2019">2019</option>
               <option value="2020">2020</option>
               <option value="2021">2021</option>
