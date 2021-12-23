@@ -31,13 +31,13 @@ export default function App() {
     console.log("in side app");
     console.log(newAddedExpense);
     setExpense((prevExpense) => {
-      [newAddedExpense, ...prevExpense];
+      return [newAddedExpense, ...prevExpense];
     });
   }
   return (
     <div className="App">
       <NewExpense onNewAddedExpense={addedExpense} />
-      <Expenses list={dummy_list} />
+      <Expenses list={expense} />
     </div>
   );
 }
