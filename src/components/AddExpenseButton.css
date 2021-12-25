@@ -1,0 +1,12 @@
+.add-button {
+  margin: auto;
+  display: block;
+  background-color: rgb(20, 94, 75);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: white;
+  font-size: 15px;
+  font-family: serif;
+  font-weight: bold;
+}

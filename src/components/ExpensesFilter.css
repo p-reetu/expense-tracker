@@ -37,3 +37,7 @@ h4 {
 .bar-parent-div p {
   font-size: small;
 }
+select {
+  border-radius: 10px;
+  padding: 5px;
+}

@@ -53,7 +53,10 @@ export default function ExpenseForm(props) {
           <input type="date" value={expenseDate} onChange={dateChangeHandler} />
         </div>
       </div>
-      <button type="submit">Add Expense</button>
+      <div className="add-or-cancel-button-div">
+        <button type="submit">Add Expense</button>
+        <button type="reset">Cancel</button>
+      </div>
       <br />
     </form>
   );

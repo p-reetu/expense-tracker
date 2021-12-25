@@ -5,19 +5,29 @@
 }
 input {
   background-color: blanchedalmond;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid black;
 }
 button {
-  margin: auto;
-  display: block;
+  display: inline-block;
+  margin: 10px;
   background-color: rgb(20, 94, 75);
   padding: 10px;
   border-radius: 10px;
+  border: 1px solid black;
   color: white;
   font-size: 15px;
   font-family: serif;
   font-weight: bold;
+  width: 200px;
 }
 .form-control {
   display: inline-block;
   flex-grow: 1;
+}
+.add-or-cancel-button-div {
+  display: flex;
+  justify-content: center;
 }
