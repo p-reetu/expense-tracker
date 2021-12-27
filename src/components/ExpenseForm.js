@@ -27,14 +27,21 @@ export default function ExpenseForm(props) {
     setExpenseDate("");
     props.onNewExpense(newExpenseData);
   }
-
+  function onCancel() {
+    props.onCancelButtonClick();
+  }
   return (
     <form onSubmit={onFormSubmitHandler}>
       <div className="ExpenseForm">
         <div className="form-control">
           <label>Expense Name</label>
           <br />
-          <input type="text" value={title} onChange={titleChangeHandler} />
+          <input
+            type="text"
+            value={title}
+            onChange={titleChangeHandler}
+            required
+          />
         </div>
         <div className="form-control">
           <label>Expense Amount</label>
@@ -45,17 +52,25 @@ export default function ExpenseForm(props) {
             step="1"
             value={amount}
             onChange={amountChangeHandler}
+            required
           />
         </div>
         <div className="form-control">
           <label>Expense Date</label>
           <br />
-          <input type="date" value={expenseDate} onChange={dateChangeHandler} />
+          <input
+            type="date"
+            value={expenseDate}
+            onChange={dateChangeHandler}
+            required
+          />
         </div>
       </div>
       <div className="add-or-cancel-button-div">
         <button type="submit">Add Expense</button>
-        <button type="reset">Cancel</button>
+        <button type="reset" onClick={onCancel}>
+          Cancel
+        </button>
       </div>
       <br />
     </form>

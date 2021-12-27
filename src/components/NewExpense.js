@@ -16,7 +16,15 @@ export default function NewExpense(props) {
     setContent(<AddExpenseButton onClickOfAddEpense={onClickOfAddEpense} />);
   }
   function onClickOfAddEpense() {
-    setContent(<ExpenseForm onNewExpense={NewExpenseHandler} />);
+    setContent(
+      <ExpenseForm
+        onNewExpense={NewExpenseHandler}
+        onCancelButtonClick={onCancelButtonClick}
+      />
+    );
+  }
+  function onCancelButtonClick() {
+    setContent(<AddExpenseButton onClickOfAddEpense={onClickOfAddEpense} />);
   }
   return <div className="NewExpense">{content}</div>;
 }
