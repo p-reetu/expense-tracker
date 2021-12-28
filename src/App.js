@@ -28,8 +28,6 @@ export default function App() {
   const [expense, setExpense] = useState(dummy_list);
 
   function addedExpense(newAddedExpense) {
-    console.log("in side app");
-    console.log(newAddedExpense);
     setExpense((prevExpense) => {
       return [newAddedExpense, ...prevExpense];
     });
