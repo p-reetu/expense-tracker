@@ -1,0 +1,11 @@
+.Chart {
+  padding: 10px;
+  margin: 0 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: blanchedalmond;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+}

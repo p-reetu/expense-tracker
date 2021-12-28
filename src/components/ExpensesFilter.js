@@ -21,56 +21,6 @@ export default function ExpensesFilter(props) {
           </div>
         </div>
       </div>
-      <div className="filter-bars">
-        <div className="bar-parent-div">
-          <div className="bar"></div>
-          <p>JAN</p>
-        </div>
-        <div className="bar-parent-div">
-          <div className="bar"></div>
-          <p>FEB</p>
-        </div>
-        <div className="bar-parent-div">
-          <div className="bar"></div>
-          <p>MAR</p>
-        </div>
-        <div className="bar-parent-div">
-          <div className="bar"></div>
-          <p>APR</p>
-        </div>
-        <div className="bar-parent-div">
-          <div className="bar"></div>
-          <p>MAY</p>
-        </div>
-        <div className="bar-parent-div">
-          <div className="bar"></div>
-          <p>JUN</p>
-        </div>
-        <div className="bar-parent-div">
-          <div className="bar"></div>
-          <p>JUL</p>
-        </div>
-        <div className="bar-parent-div">
-          <div className="bar"></div>
-          <p>AUG</p>
-        </div>
-        <div className="bar-parent-div">
-          <div className="bar"></div>
-          <p>SEP</p>
-        </div>
-        <div className="bar-parent-div">
-          <div className="bar"></div>
-          <p>OCT</p>
-        </div>
-        <div className="bar-parent-div">
-          <div className="bar"></div>
-          <p>NOV</p>
-        </div>
-        <div className="bar-parent-div">
-          <div className="bar"></div>
-          <p>DEC</p>
-        </div>
-      </div>
     </div>
   );
 }
