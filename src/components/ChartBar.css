@@ -29,3 +29,8 @@
   text-align: center;
   margin: 5px 0;
 }
+@media (max-width: 400px) {
+  .chart-bar__inner {
+    width: 20%;
+  }
+}

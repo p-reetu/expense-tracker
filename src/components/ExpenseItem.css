@@ -27,3 +27,16 @@
   margin: 30px 20px;
   padding: 5px 10px;
 }
+@media (max-width: 400px) {
+  .Expense-amount {
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+  }
+  .ExpenseItem {
+    flex-direction: column;
+  }
+  .Expense-name {
+    text-align: center;
+  }
+}

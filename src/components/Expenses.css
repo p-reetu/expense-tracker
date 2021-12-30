@@ -8,3 +8,8 @@
 p {
   text-align: center;
 }
+@media (max-width: 600px) {
+  .Expenses {
+    margin: 5px;
+  }
+}
